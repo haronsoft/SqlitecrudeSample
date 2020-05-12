@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    android:layout_marginTop="150dp"
+    android:background="#F8D7C6F6"
+    tools:context=".admin.AdminLogin">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="Revenue Collection"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace-serif"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/rounder"
+        android:orientation="vertical"
+        android:padding="25sp"
+        android:stateListAnimator="@drawable/rounder">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_high_res" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_margin="15sp"
+            android:hint="Username" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_margin="15sp"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="55sp"
+            android:drawableLeft="@drawable/ic_keyin"
+            android:fontFamily="sans-serif"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="establishment_types">
+        <item>Booked</item>
+        <item>Available</item>
+        <item>Occupied</item>
+        <item>Under Maintenance</item>
+    </string-array>
+</resources>

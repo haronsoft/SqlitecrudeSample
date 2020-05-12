@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RevenueCollectionApp</string>
+    <string name="search">Search</string>
+    <string name="name_of_establishment">Name of Apartment</string>
+    <string name="cafe">Booked</string>
+    <string name="pizza">House type</string>
+    <string name="location">Location</string>
+    <string name="delete">Delete</string>
+    <string name="reviewer_id">Price</string>
+    <string name="april_18th">April 18th</string>
+    <string name="id">Amount of Rent</string>
+    <string name="add_review">Add House</string>
+    <string name="establishment_type">Apartment</string>
+    <string name="food_type">HouseType</string>
+    <string name="rating">Rating</string>
+    <string name="required_field">This is a required field</string>
+    <string name="add">Add</string>
+    <string name="added_successfully">Added successfully</string>
+</resources>
