@@ -31,6 +31,7 @@ import java.util.Locale;
 
 public class AdminEstablishmentAdapter extends RecyclerView.Adapter<AdminEstablishmentAdapter.AdminEstablishmentViewHolder> implements Filterable {
 
+    Context context;
     //AdminEstablishmentAdapter
     private Context mContext;
     private List<Establishment> establishmentList;
@@ -57,8 +58,8 @@ public class AdminEstablishmentAdapter extends RecyclerView.Adapter<AdminEstabli
         holder.txtEstablishmentName.setText(establishment.getEstablishmentName());
         holder.btnOptions.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(mContext, v);
+            public void onClick(final View v) {
+                final PopupMenu popupMenu = new PopupMenu(mContext, v);
                 MenuInflater inflater = popupMenu.getMenuInflater();
                 inflater.inflate(R.menu.menu_establishment_item, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -70,7 +71,6 @@ public class AdminEstablishmentAdapter extends RecyclerView.Adapter<AdminEstabli
                                 establishmentListFiltered.remove(holder.getAdapterPosition());
                                 notifyItemRemoved(holder.getAdapterPosition());
                                 return true;
-
                             default:
                                 return false;
                         }
@@ -79,6 +79,7 @@ public class AdminEstablishmentAdapter extends RecyclerView.Adapter<AdminEstabli
                 popupMenu.show();
             }
         });
+
         holder.txtEstablishmentType.setText(establishment.getEstablishmentType());
 
         if (establishment.getFoodType() != null)

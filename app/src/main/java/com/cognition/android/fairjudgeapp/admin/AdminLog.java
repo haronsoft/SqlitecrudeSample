@@ -72,10 +72,9 @@ public class AdminLog extends AppCompatActivity {
 
         databaseHelper = new DatabaseHelper(AdminLog.this);
         establishmentList = new ArrayList<>();
-        //establishmentAdapter = new EstablishmentAdapter(AdminLog.this, establishmentList);
         adminEstablishmentAdapter = new AdminEstablishmentAdapter(AdminLog.this, establishmentList);
         estList.setAdapter(adminEstablishmentAdapter);
-        //  estList.setAdapter(establishmentAdapter);
+
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(AdminLog.this);
         estList.setLayoutManager(mLayoutManager);
         estList.setItemAnimator(new DefaultItemAnimator());
@@ -85,7 +84,7 @@ public class AdminLog extends AppCompatActivity {
         refreshList.setRefreshing(true);
         establishmentList.clear();
         establishmentList.addAll(databaseHelper.getAllEstablishments());
-        //establishmentAdapter.notifyDataSetChanged();
+
         adminEstablishmentAdapter.notifyDataSetChanged();
         refreshList.setRefreshing(false);
     }

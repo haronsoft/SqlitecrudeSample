@@ -6,4 +6,9 @@
         android:icon="@drawable/ic_delete_black_24dp"
         android:title="@string/delete"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Update"
+        app:showAsAction="ifRoom" />
 </menu>

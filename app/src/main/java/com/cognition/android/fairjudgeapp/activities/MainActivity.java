@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.cognition.android.fairjudgeapp.R;
 import com.cognition.android.fairjudgeapp.admin.AdminLogin;
+import com.cognition.android.fairjudgeapp.admin.Booking;
 import com.cognition.android.fairjudgeapp.models.DatabaseHelper;
 import com.cognition.android.fairjudgeapp.models.Establishment;
 import com.cognition.android.fairjudgeapp.utils.EstablishmentAdapter;
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.book:
                         Toast.makeText(MainActivity.this, "Booking", Toast.LENGTH_SHORT).show();
-
+                        startActivity(new Intent(MainActivity.this, Booking.class));
                 }
                 return false;
             }

@@ -50,32 +50,6 @@ public class EstablishmentAdapter extends RecyclerView.Adapter<EstablishmentAdap
     public void onBindViewHolder(@NonNull final EstablishmentViewHolder holder, int position) {
         final Establishment establishment = establishmentListFiltered.get(position);
         holder.txtEstablishmentName.setText(establishment.getEstablishmentName());
-/*
-        holder.btnOptions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(mContext, v);
-                MenuInflater inflater = popupMenu.getMenuInflater();
-                inflater.inflate(R.menu.menu_establishment_item, popupMenu.getMenu());
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        switch (item.getItemId()) {
-                            case R.id.deleteItem:
-                                new DatabaseHelper(mContext).deleteEstablishment(establishment.getId());
-                                establishmentListFiltered.remove(holder.getAdapterPosition());
-                                notifyItemRemoved(holder.getAdapterPosition());
-                                return true;
-
-                            default:
-                                return false;
-                        }
-                    }
-                });
-                popupMenu.show();
-            }
-        });*/
-
         holder.txtEstablishmentType.setText(establishment.getEstablishmentType());
 
         if (establishment.getFoodType() != null)

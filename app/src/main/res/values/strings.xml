@@ -16,4 +16,23 @@
     <string name="required_field">This is a required field</string>
     <string name="add">Add</string>
     <string name="added_successfully">Added successfully</string>
+
+    <string-array name="array_payment">
+        <item> TENANT NAME  ------ AMOUNT </item>
+        <item>1.John Kamwana    ====> 8,500/=</item>
+        <item>2.Josephp Omera   ====> 35,00/=</item>
+        <item>3.Mzito Kapuna    ====> 1,500/=</item>
+        <item>4.Loise kutus     ====> 18,500/=</item>
+        <item>5.Anne Odhiambo   ====> 2,500/=</item>
+        <item>6.Stephen Mochach ====> 14,500/=</item>
+        <item>7.Washington OG   ====> 13,500/=</item>
+        <item>8.John doe        ====> 10,500/=</item>
+        <item>9.John Kamwana    ====> 9,500/=</item>
+        <item>10.Son kaboi      ====> 8,500/=</item>
+        <item>11.Smith Daughter ====> 7,500/=</item>
+        <item>12.ngrana Kamwana ====> 16,500/=</item>
+        <item>13.Rederr cidder  ====> 12,500/=</item>
+        <item>14.Cellar cast    ====> 12,500/=</item>
+    </string-array>
 </resources>
+
